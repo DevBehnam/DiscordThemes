@@ -1,0 +1,57 @@
+/**
+ * @name Reverie
+ * @description A customized Discord theme based on BasicBackground
+ * @author DevBehnam
+ * @source https://github.com/DevBehnam/DiscordThemes
+ * @credits https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground
+*/
+
+@import url("https://github.com/mwittrien/BetterDiscordAddons/raw/refs/heads/master/Themes/BasicBackground/BasicBackground.theme.css");
+
+:root {
+    --font: "Maple Mono";
+    --font-code: "Maple Mono NF";
+
+    --background: url(https://raw.githubusercontent.com/DevBehnam/DiscordThemes/refs/heads/main/Reverie/_res/background.png);
+    --backgroundblur: 0;
+
+    --transparencycolor: 30, 32, 48;
+    --transparencyalpha: 0.48;
+    --bordercolor: 0, 0, 0;
+    --messagetransparency: 0.15;
+    --guildchanneltransparency: 0.15;
+    --chatinputtransparency: 0;
+    --memberlisttransparency: 0;
+
+    --accentcolor: 183, 189, 248, 0.23;
+    --accentcolor2: var(--accentcolor);
+    --mentioncolor: var(--accentcolor);
+    --linkcolor: 138, 173, 244;
+
+    --backdrop: rgba(24, 25, 38, 0.90);
+    --backdropblur: 8;
+
+    --textbrightest: 198, 160, 246;
+    --textbrighter: 183, 189, 248;
+    --textbright: 138, 173, 244;
+    --textdark: 165, 173, 203;
+    --textdarker: 147, 154, 183;
+    --textdarkest: 110, 115, 141;
+}
+
+/* Override file attachment names */
+#app-mount .fileWrapper__0ccae a,
+.fileWrapper__0ccae .fileName {
+    color: rgb(var(--linkcolor)) !important;
+}
+
+/*  remove the text in title   */
+html:only-child > head + body div.bar_c38106 > div.title_c38106::before {
+    content: none !important;
+    display: none !important;
+}
+
+html:only-child > head + body div.bar_c38106 > div.title_c38106::after {
+    content: none !important;
+    display: none !important;
+}
