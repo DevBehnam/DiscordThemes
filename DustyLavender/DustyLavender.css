@@ -9,8 +9,8 @@
 @import url("https://github.com/mwittrien/BetterDiscordAddons/raw/refs/heads/master/Themes/BasicBackground/BasicBackground.theme.css");
 
 :root {
-    --font: "Maple Mono";
-    --font-code: "Maple Mono NF";
+    --font: "Maple Mono NFP";
+    --font-code: "Maple Mono NFP";
 
     --background: url(https://raw.githubusercontent.com/DevBehnam/DiscordThemes/refs/heads/main/DustyLavender/_res/background.avif);
     --backgroundblur: 0;
