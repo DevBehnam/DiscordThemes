@@ -155,3 +155,23 @@ body {
     --purple-4: oklch(63.7% 0.126 303.9);
     --purple-5: oklch(59.2% 0.126 303.9);
 }
+
+/* scrollbar colors */
+@container root style(--colors: on) {
+    .visual-refresh body,
+    .visual-refresh .theme-dark:not(.custom-user-profile-theme),
+    .visual-refresh .theme-light:not(.custom-user-profile-theme) {
+        --scrollbar-auto-track: transparent;
+        --scrollbar-auto-thumb: hsla(276, 83%, 75%, 0.33);
+
+        --scrollbar-thin-thumb: hsla(276, 83%, 80%, 0.33);
+        --scrollbar-thin-track: transparent;
+    }
+
+    /* gif picker scrollbar */
+    .visual-refresh {
+        .contentWrapper__08434 ::-webkit-scrollbar-thumb {
+            background-color: var(--bg-1);
+        }
+    }
+}
